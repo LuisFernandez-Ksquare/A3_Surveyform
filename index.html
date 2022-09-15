@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        .intro {
+            font-size: 60px;
+        }
+
+        .info {
+            font-size: 40px;
+        }
+
+        .question {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        input[type=text],
+        [type=email] {
+            width: 35%
+        }
+        footer {
+            background-color: ghostwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="C:\Users\luise\CoreCourse\A3_Surveyform\Logo.jpg" alt="School logo" width="100%" height="600">
+    </div>
+    <div id="intro" class="intro">
+        <p>What is NBA Basketball School?</p>
+    </div>
+    <div id="info" class="info">
+        <p>NBA Basketball School is a network of tuition-based basketball development programs open to male
+            and female players from outside the U.S. ages 6-18. NBA Basketball Schools have been launched in Brazil,
+            China,
+            Greece, India, Mexico, Uruguay and the UAE. The NBA Basketball School curriculum is designed to help
+            players,
+            parents, coaches and organizations better understand the process of improvement and development. The program
+            focuses on oncourt training, strength and conditioning, and basketball education under the direction of
+            local
+            coaches who work directly with the NBA International Basketball Operations staff around the world.</p>
+    </div>
+    <div class="question">
+        <form>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Name">
+            <br>
+            <br>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <br>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="15" max="25">
+            <br>
+            <br>
+            <label for="country">Country:</label>
+            <select type="select" id="country" name="country">
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="comments">Comments</label>
+            <br>
+            <textarea name="comments" id="comments" placeholder="Type here..."></textarea>
+            <br>
+            <label for="checkbox">Check if you will like to receive more information</label>
+            <input type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+            <br>
+            <br>
+            <section>
+                <input type="submit" value="Submit">
+                <br>
+                <br>
+            </section>
+        </form>
+        <footer>
+            <p>© (c) 2021 NBA Media Ventures, LLC. All Rights Reserved.
+                Privacy Policy
+                Terms of Use</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
